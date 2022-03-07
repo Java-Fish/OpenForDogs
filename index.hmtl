@@ -8,7 +8,9 @@
 <h1>Open for Dogs</h1>
 <div>Hier entsteht eine einfach Übersicht über Restaurants in Jena und ihre Angebote für Hundebesitzer</div>
 
-
+<div class="footer">
+<a href="https://raw.githubusercontent.com/Java-Fish/OpenForDogs/main/data.csv" target="_blank" rel="noopener">Rohdaten als CSV Datei zum Download</a>
+</div>
 
 </body>
 </html> 
