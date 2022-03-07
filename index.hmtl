@@ -1,16 +1,38 @@
  <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
 <h1>Open for Dogs</h1>
-<div>Hier entsteht eine einfach Übersicht über Restaurants in Jena und ihre Angebote für Hundebesitzer</div>
+<div>Hier entsteht eine einfach Übersicht über Restaurants in Jena und ihre Angebote für Hundebesitzer</div><br>
 
-<div class="footer">
-<a href="https://raw.githubusercontent.com/Java-Fish/OpenForDogs/main/data.csv" target="_blank" rel="noopener">Rohdaten als CSV Datei zum Download</a>
+<div id="modernTable">
+    <table>            
+        <thead>
+            <th data-field="restaurant">Restaurant</th>
+            <th data-field="welcome-indoor" data-sortable="true">Innen erlaubt</th>
+            <th data-field="welcome-outdoor" data-sortable="true">Außen erlaubt</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>bla</td>
+                <td>bla</td>
+                <td>bla</td>
+            </tr>
+        </tbody>
+    </table>
+</div><br>
+
+<div class="reminder">
+    Bitte daran denken, dass es wichtig ist das euer Hund auch für die gegebenen Freiheiten bereit ist. Wenn es keine Maulkorbpflicht gibt und ihr euch unsicher seid, dann geht auf Nummer sicher und legt eurem Vierbeiner einen Maulkorb an. Niemand möchte das Hndebesitzer in einem schlechten Licht dastehen und wegen Einzelfällen ausgeschlossen werden.
 </div>
+
+<footer class="footer text-center">
+<a href="https://raw.githubusercontent.com/Java-Fish/OpenForDogs/main/data.csv" target="_blank" rel="noopener">Rohdaten als CSV Datei zum Download</a>
+</footer>
 
 </body>
 </html> 
