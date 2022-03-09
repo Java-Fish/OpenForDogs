@@ -21,6 +21,10 @@
 .w3-hover-text-theme:hover {color:#2f4f4f !important}
 .w3-hover-border-theme:hover {border-color:#2f4f4f !important}
 
+body{
+  size: 1em;
+}
+
 header{
   text-align: center;
 }
