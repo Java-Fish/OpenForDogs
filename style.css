@@ -57,17 +57,29 @@ a:hover {
   position: relative;
   margin: auto;
   height: 100%;
-  overflow:scroll;
+  /*overflow:scroll;*/
+}
+
+#content > div {
+  margin: 1%;
+}
+
+#modernTable{
+  overflow-x:auto;
 }
 
 table{
-  position: relative;
-  margin: auto;
+  border-collapse: collapse;
+  border: 5px solid azure;
+}
+
+td {
+  padding: 5px;
 }
 
 th{
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 5px;
   text-align: left;
-  
 }
