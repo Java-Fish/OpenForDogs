@@ -23,6 +23,7 @@
 
 body{
   size: 1em;
+  font-family: Sans-serif;
 }
 
 header{
@@ -48,6 +49,7 @@ footer > a{
   text-decoration:none;
 
 }
+
 a:hover {
   background-color: darkslategray;
   color: azure;
