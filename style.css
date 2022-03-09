@@ -37,12 +37,15 @@ footer{
   width: 100%;
   height: 50px;
   background-color: blanchedalmond;
+  text-align: center;
 }
 
 footer > a{
   position: relative;
   margin-left: 10%;
   margin-right: 10%;
+  color: azure;
+  text-decoration:none;
 }
 a:hover {
   background-color: darkslategray;
