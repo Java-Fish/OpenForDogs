@@ -10,6 +10,13 @@
 .ofd-hover-text-theme:hover {color:#578ca9 !important}
 .ofd-hover-border-theme:hover {border-color:#578ca9 !important}
 
+body{
+  margin: auto;
+  margin-left: 20 rem;
+  margin-right: 20 rem;
+
+}
+
 filter-white{
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
@@ -28,8 +35,4 @@ table{
 
 .reminder{
   color: darkred;
-}
-
-li{
-  color:#578ca9 !important
 }
