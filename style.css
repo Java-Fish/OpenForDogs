@@ -35,3 +35,16 @@ table{
 .reminder{
   color: darkred;
 }
+
+.card{
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center
+}
+
+.cardLinkBtn{
+  position: inherit;
+  bottom: 0rem;
+}
