@@ -1,3 +1,15 @@
+.ofd-theme-light {color:#000 !important; background-color:#f5f8fa !important}
+.ofd-theme-dark {color:#fff !important; background-color:#2b4654 !important}
+.ofd-theme-action {color:#fff !important; background-color:#2b4654 !important}
+
+.ofd-theme {color:#fff !important; background-color:#578ca9 !important}
+.ofd-text-theme {color:#578ca9 !important}
+.ofd-border-theme {border-color:#578ca9 !important}
+
+.ofd-hover-theme:hover {color:#fff !important; background-color:#578ca9 !important}
+.ofd-hover-text-theme:hover {color:#578ca9 !important}
+.ofd-hover-border-theme:hover {border-color:#578ca9 !important}
+
 filter-white{
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
@@ -16,4 +28,8 @@ table{
 
 .reminder{
   color: darkred;
+}
+
+li{
+  color:#578ca9 !important
 }
