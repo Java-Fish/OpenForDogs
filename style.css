@@ -41,10 +41,18 @@ table{
   margin-left: auto;
   margin-right: auto;
   display: block;
-  text-align: center
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
 .cardLinkBtn{
   position: inherit;
   bottom: 0rem;
+  box-shadow: 0 2px 2.5px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
+
