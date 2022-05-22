@@ -12,3 +12,6 @@ $("#tableSearch").on("keyup", function() {
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
 });
+
+// CSV format table export
+$('#restaurantTable').tableExport({type:'csv'});
