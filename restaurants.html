@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Open for Dogs - Restaurants</title>
+    <title>Open for Dogs - Jena</title>
     <meta name="description" content="Auflistung hundefreundlicher Restaurants in und um Jena.">
     <meta name="og:title" property="og:title" content="Open for Dogs - Jena- Auflistung hundefreundlicher Restaurants in und um Jena.">
     <meta name="robots" content="index, follow">
@@ -25,198 +25,470 @@
     </header>
 </div>
 
-<div id="content" class="">
-    <div>Die nachstehenden Informationen wurden direkt bei den jeweiligen Restaurants angefragt.</div><br>
 
-    <input class="form-control" id="tableSearch" type="text" placeholder="Suche...">
-    <div>
-        <table id="restaurantTable" class="table table-striped table-bordered table-hover table-sm table-responsive">
-            <caption>Restaurants in Jena und deren Wünsche an Hundebesitzer</caption>            
-            <thead class="">
-                <th data-field="restaurant">Restaurant</th>
-                <th data-field="email">E-Mail</th>
-                <th data-field="welcome-indoor" data-sortable="true">Innen erlaubt</th>
-                <th data-field="welcome-outdoor" data-sortable="true">Außen erlaubt</th>
-                <th data-field="register-required" data-sortable="true">Anmeldung erforderlich</th>
-                <th data-field="leash" data-sortable="true">Leinenpflicht</th>
-                <th data-field="muzzle" data-sortable="true">Maulkorbpflicht</th>
-                <th data-field="water" data-sortable="true">Trinkwasser verfügbar</th>
-                <th data-field="quite-place" data-sortable="true">Ruhiger Platz verfügbar</th>
-            </thead>
-            <tbody id="restaurantTableBody">
-                <tr class="">
-                    <td>Zum Ziegenhainer</td>
-                    <td>gaststaette@zum-ziegenhainer.de</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                </tr>
-                <tr class="">
-                    <td>Beef 52</td>
-                    <td>info@beef-52.de</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Für große Hunde erwünscht</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                </tr>
-                <tr class="">
-                    <td>Milchmix</td>
-                    <td>info@milchmix-eiscafe.de</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td data-toggle="tooltip" title="Keine Angaben">-</td>
-                </tr>
-                <tr class="">
-                    <td>Hotel Schwarzer Bär</td>
-                    <td>hotel@schwarzer-baer.de</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                </tr>
-                <tr class="">
-                    <td>Braugasthof Papiermühle</td>
-                    <td>papiermuehle@jenaer-bier.de</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                </tr>
-                <tr class="">
-                    <td>Taparazzi</td>
-                    <td>office@soulfood-holding.de</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Nein</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                </tr>
-                <tr class="">
-                    <td>Bauersfeld</td>
-                    <td>info@bauersfeld-jena.de</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                </tr>
-                <tr class="">
-                    <td>Fuchsturm</td>
-                    <td>info@fuchsturmgaststaette.de</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                </tr>
-                <tr class="">
-                    <td>Lobdeburgklause</td>
-                    <td>info@lobdeburgklause.de</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                </tr>
-                <tr class="">
-                    <td>Landgraf</td>
-                    <td>info@landgrafen.com</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td data-toggle="tooltip" title="Keine Angaben">-</td>
-                </tr>
-                <tr class="">
-                    <td>McDonalds</td>
-                    <td>service@mcdonalds.de</td>
-                    <td data-toggle="tooltip" title="Angaben befinden sich an der Eingangstür.">Evtl.</td>
-                    <td >Evtl.</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Nein</td>
-                    <td>Nein</td>
-                </tr>
-                <tr class="">
-                    <td>Cafe Immergrün</td>
-                    <td>cafe-immergruen@web.de</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Nein</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                </tr>
-                <tr class="">
-                    <td>Pici Cafe Vinothek</td>
-                    <td>pici-cafe-vinothek@email.de</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Nein</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                </tr>
-                <tr class="">
-                    <td>Nordsee</td>
-                    <td>nordsee@nordsee.com</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td data-toggle="tooltip" title="Keine Angaben">-</td>
-                    <td>Nein</td>
-                    <td>Nein</td>
-                    <td>Nein</td>
-                    <td>Nein</td>
-                </tr>
-                <tr class="">
-                    <td>Stilbruch</td>
-                    <td>post@stilbruch-jena.de</td>
-                    <td>Ja</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                    <td>Nein</td>
-                    <td>Nein</td>
-                    <td>Ja</td>
-                </tr>
-            </tbody>
-        </table>
-    </div><br>
-
-    <div class="reminder">
-    Bitte daran denken, dass es wichtig ist, dass euer Hund auch für die gegebenen Freiheiten bereit ist. Wenn es keine Maulkorbpflicht gibt und ihr euch unsicher seid, dann geht auf Nummer sicher und legt eurem Vierbeiner einen Maulkorb an. Niemand möchte, dass Hundebesitzer in einem schlechten Licht dastehen und wegen Einzelfällen ausgeschlossen werden.
+<div class="container">
+    <div class="row" style="margin-bottom: 0.5rem;">
+        <div class="col-sm-4">
+            <input type="search" placeholder="Suche..." name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+        </div>
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+        </div>
     </div>
-
+    <div class="w-100">
+        <div class="card border-success">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h4 class="card-title row" style="margin-left: 0.5rem;">Bauersfeld</h4>
+                        <div class="card-text row">
+                            <div class="col-md-3">Hunde sind willkommen</div>
+                            <div class="col-md-3">Leinenpflicht</div>
+                            <div class="col-md-3">Wasser verfügbar</div>
+                            <div class="col-md-3">Ruhiger Tisch möglich</div>
+                        </div>
+                        <div class="card-text row"><hr></div>
+                        <div class="card-text row">
+                            <div class="col-md-1"></div>
+                            <div id="cardAddress" class="col-md-5">
+                                <div class="row"><a href="geo:50.93189,11.58652">Am Planetarium 5<br>07743 Jena</a></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row"><a class="" target="_blank" href="https://bauersfeld-jena.de/">bauersfeld-jena.de</a></div>
+                                <div class="row"><a class="" href="tel:+4903641885450">+49 (0) 36 41 - 88 54 50</a></div>
+                                <div class="row"><a class="" href="mailto:order@planetarium-jena.de">order(at)planetarium-jena.de</a></div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="card-text row"></div>
+                        <div class="card-footer row visually-hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-warning">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h4 class="card-title row" style="margin-left: 0.5rem;">Beef 52</h4>
+                        <div class="card-text row">
+                            <div class="col-md-3">Hunde sind willkommen</div>
+                            <div class="col-md-3">Leinenpflicht</div>
+                            <div class="col-md-3">Wasser verfügbar</div>
+                            <div class="col-md-3">Ruhiger Tisch möglich</div>
+                        </div>
+                        <div class="card-text row"><hr></div>
+                        <div class="card-text row">
+                            <div class="col-md-1"></div>
+                            <div id="cardAddress" class="col-md-5">
+                                <div class="row"><a href="geo:50.930054,11.5796213">Wagnergasse 8<br>07743 Jena</a></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row"><a class="" target="_blank" href="https://beef-52.de/">beef-52.de</a></div>
+                                <div class="row"><a class="" href="tel:+4936416397658">+49 3641 6397658</a></div>
+                                <div class="row"><a class="" href="mailto:info@beef-52.de">info(at)beef-52.de</a></div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="card-text row"></div>
+                        <div class="card-footer row">Große Hunde bitte vorher anmelden</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-success">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h4 class="card-title row" style="margin-left: 0.5rem;">Braugasthof Papiermühle</h4>
+                        <div class="card-text row">
+                            <div class="col-md-3">Hunde sind willkommen</div>
+                            <div class="col-md-3">Leinen- und Maulkorbpflicht</div>
+                            <div class="col-md-3">Wasser verfügbar</div>
+                            <div class="col-md-3">Ruhiger Tisch möglich</div>
+                        </div>
+                        <div class="card-text row"><hr></div>
+                        <div class="card-text row">
+                            <div class="col-md-1"></div>
+                            <div id="cardAddress" class="col-md-5">
+                                <div class="row"><a href="geo:50.9375929,11.5556575">Erfurter Str. 102<br>07743 Jena</a></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row"><a class="" target="_blank" href="https://www.jenaer-bier.de/">jenaer-bier.de</a></div>
+                                <div class="row"><a class="" href="tel:+49364145980">+49 3641 45980</a></div>
+                                <div class="row"><a class="" href="mailto:papiermuehle@jenaer-bier.de">papiermuehle(at)jenaer-bier.de</a></div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="card-text row"></div>
+                        <div class="card-footer row visually-hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-success">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h4 class="card-title row" style="margin-left: 0.5rem;">Cafe Immergrün</h4>
+                        <div class="card-text row">
+                            <div class="col-md-3">Hunde sind willkommen</div>
+                            <div class="col-md-3">Keine Leinenpflicht</div>
+                            <div class="col-md-3">Wasser verfügbar</div>
+                            <div class="col-md-3">Ruhiger Tisch möglich</div>
+                        </div>
+                        <div class="card-text row"><hr></div>
+                        <div class="card-text row">
+                            <div class="col-md-1"></div>
+                            <div id="cardAddress" class="col-md-5">
+                                <div class="row"><a href="geo:50.9295369,11.578761">Fürstengraben 30<br>07743 Jena</a></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row"><a class="" target="_blank" href="http://www.cafe-immergruen.com/">cafe-immergruen.com</a></div>
+                                <div class="row"><a class="" href="tel:+49364125470">+49 3641 25470</a></div>
+                                <div class="row"><a class="" href="mailto:cafe-immergruen@web.de">cafe-immergruen(at)web.de</a></div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="card-text row"></div>
+                        <div class="card-footer row visually-hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-warning">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h4 class="card-title row" style="margin-left: 0.5rem;">Fuchsturm</h4>
+                        <div class="card-text row">
+                            <div class="col-md-3">Hunde sind willkommen</div>
+                            <div class="col-md-3">Leinenpflicht</div>
+                            <div class="col-md-3">Wasser verfügbar</div>
+                            <div class="col-md-3">Ruhiger Tisch möglich</div>
+                        </div>
+                        <div class="card-text row"><hr></div>
+                        <div class="card-text row">
+                            <div class="col-md-1"></div>
+                            <div id="cardAddress" class="col-md-5">
+                                <div class="row"><a href="geo:50.9235936,11.6197934">Turmgasse 26<br>07749 Jena</a></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row"><a class="" target="_blank" href="https://www.fuchsturmgaststaette.de/fuchsturm-gaststaette-jena.html">fuchsturmgaststaette.de</a></div>
+                                <div class="row"><a class="" href="tel:+493641360606">+49 3641 360606</a></div>
+                                <div class="row"><a class="" href="mailto:info@fuchsturmgaststaette.de">info(at)fuchsturmgaststaette.de</a></div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="card-text row"></div>
+                        <div class="card-footer row">Hunde bitte vorher anmelden</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-success">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h4 class="card-title row" style="margin-left: 0.5rem;">Hotel Schwarzer Bär</h4>
+                        <div class="card-text row">
+                            <div class="col-md-3">Hunde sind willkommen</div>
+                            <div class="col-md-3">Leinenpflicht</div>
+                            <div class="col-md-3">Wasser verfügbar</div>
+                            <div class="col-md-3">Ruhiger Tisch möglich</div>
+                        </div>
+                        <div class="card-text row"><hr></div>
+                        <div class="card-text row">
+                            <div class="col-md-1"></div>
+                            <div id="cardAddress" class="col-md-5">
+                                <div class="row"><a href="geo:50.9302954,11.5882713">Lutherplatz 2<br>07743 Jena</a></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row"><a class="" target="_blank" href="https://www.schwarzer-baer-jena.de/">schwarzer-baer-jena.de</a></div>
+                                <div class="row"><a class="" href="tel:+4936414060">+49 3641 4060</a></div>
+                                <div class="row"><a class="" href="mailto:hotel@schwarzer-baer.de">hotel(at)schwarzer-baer.de</a></div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="card-text row"></div>
+                        <div class="card-footer row visually-hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-success">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h4 class="card-title row" style="margin-left: 0.5rem;">Landgrafen</h4>
+                        <div class="card-text row">
+                            <div class="col-md-3">Hunde sind willkommen</div>
+                            <div class="col-md-3">Leinenpflicht</div>
+                            <div class="col-md-3">Wasser verfügbar</div>
+                            <div class="col-md-3"></div>
+                        </div>
+                        <div class="card-text row"><hr></div>
+                        <div class="card-text row">
+                            <div class="col-md-1"></div>
+                            <div id="cardAddress" class="col-md-5">
+                                <div class="row"><a href="geo:50.935806,11.5727077">Landgrafenstieg 25<br>07743 Jena</a></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row"><a class="" target="_blank" href="https://www.landgrafen.com/">landgrafen.com</a></div>
+                                <div class="row"><a class="" href="tel:+493641507071">+49 3641 507071</a></div>
+                                <div class="row"><a class="" href="mailto:info@landgrafen.com">info(at)landgrafen.com</a></div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="card-text row"></div>
+                        <div class="card-footer row visually-hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-success">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h4 class="card-title row" style="margin-left: 0.5rem;">Lobdeburgklause</h4>
+                        <div class="card-text row">
+                            <div class="col-md-3">Hunde sind willkommen</div>
+                            <div class="col-md-3">Leinenpflicht</div>
+                            <div class="col-md-3">Wasser verfügbar</div>
+                            <div class="col-md-3">Ruhiger Tisch möglich</div>
+                        </div>
+                        <div class="card-text row"><hr></div>
+                        <div class="card-text row">
+                            <div class="col-md-1"></div>
+                            <div id="cardAddress" class="col-md-5">
+                                <div class="row"><a href="geo:50.8905664,11.6163042">Lobdeburgweg 25<br>07747 Jena</a></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row"><a class="" target="_blank" href="https://lobdeburgklause.de/">lobdeburgklause.de</a></div>
+                                <div class="row"><a class="" href="tel:+493641507490">+49 3641 507490</a></div>
+                                <div class="row"><a class="" href="mailto:info@lobdeburgklause.de">info(at)lobdeburgklause.de</a></div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="card-text row"></div>
+                        <div class="card-footer row visually-hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-warning">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h4 class="card-title row" style="margin-left: 0.5rem;">McDonalds</h4>
+                        <div class="card-text row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3">Leinenpflicht</div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3"></div>
+                        </div>
+                        <div class="card-text row"><hr></div>
+                        <div class="card-text row">
+                            <div class="col-md-1"></div>
+                            <div id="cardAddress" class="col-md-5">
+                                <div class="row"><a href="geo:"><br></a></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row"><a class="" target="_blank" href=""></a></div>
+                                <div class="row"><a class="" href="tel:"></a></div>
+                                <div class="row"><a class="" href="mailto:"></a></div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="card-text row"></div>
+                        <div class="card-footer row">Ob Hunde erlaubt sind kann man an der Eingangstüt der Filialen erkennen. Bis jetzt gab es jedoch in Jena noch nie Probleme.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-success">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h4 class="card-title row" style="margin-left: 0.5rem;">Milchmix</h4>
+                        <div class="card-text row">
+                            <div class="col-md-3">Hunde sind willkommen</div>
+                            <div class="col-md-3">Leinenpflicht</div>
+                            <div class="col-md-3">Wasser verfügbar</div>
+                            <div class="col-md-3">Ruhiger Tisch möglich</div>
+                        </div>
+                        <div class="card-text row"><hr></div>
+                        <div class="card-text row">
+                            <div class="col-md-1"></div>
+                            <div id="cardAddress" class="col-md-5">
+                                <div class="row"><a href="geo:50.9292818,11.5831678">Johannisstraße 17<br>07743 Jena</a></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row"><a class="" target="_blank" href="https://milchmix-eiscafe.de/">milchmix-eiscafe.de</a></div>
+                                <div class="row"><a class="" href="tel:+493641528083">+49 3641 528083</a></div>
+                                <div class="row"><a class="" href="mailto:info@milchmix-eiscafe.de">info(at)milchmix-eiscafe.de</a></div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="card-text row"></div>
+                        <div class="card-footer row visually-hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-danger">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h4 class="card-title row" style="margin-left: 0.5rem;">Nordsee</h4>
+                        <div class="card-text row">
+                            <div class="col-md-12">Hunde verboten</div>
+                        </div>
+                        <div class="card-text row"><hr></div>
+                        <div class="card-text row">
+                            <div class="col-md-1"></div>
+                            <div id="cardAddress" class="col-md-5">
+                                <div class="row"><a href="geo:50.9277375,11.5853037">Markt 23<br>07743 Jena</a></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row"><a class="" target="_blank" href="https://www.nordsee.com/de/filialen/detail/store/nordsee-jena-markt-301/">nordsee.com</a></div>
+                                <div class="row"><a class="" href="tel:+493641489194">+49 3641 489194</a></div>
+                                <div class="row"><a class="" href="mailto:nordsee@nordsee.com">nordsee(at)nordsee.com</a></div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="card-text row"></div>
+                        <div class="card-footer row visually-hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-success">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h4 class="card-title row" style="margin-left: 0.5rem;">Pici Cafe Vinothek</h4>
+                        <div class="card-text row">
+                            <div class="col-md-3">Hunde sind willkommen</div>
+                            <div class="col-md-3">Keine Leinenpflicht</div>
+                            <div class="col-md-3">Wasser verfügbar</div>
+                            <div class="col-md-3">Ruhiger Tisch möglich</div>
+                        </div>
+                        <div class="card-text row"><hr></div>
+                        <div class="card-text row">
+                            <div class="col-md-1"></div>
+                            <div id="cardAddress" class="col-md-5">
+                                <div class="row"><a href="geo:50.9251133,11.5786128">Westbahnhofstraße 5<br>07745 Jena</a></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row"><a class="" target="_blank" href="https://pici-cafe-vinothek.de/">pici-cafe-vinothek.de</a></div>
+                                <div class="row"><a class="" href="tel:+491622686010">+49 162 2686010</a></div>
+                                <div class="row"><a class="" href="mailto:pici-cafe-vinothek@email.de">pici-cafe-vinothek(at)email.de</a></div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="card-text row"></div>
+                        <div class="card-footer row visually-hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-success">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h4 class="card-title row" style="margin-left: 0.5rem;">Stilbruch</h4>
+                        <div class="card-text row">
+                            <div class="col-md-3">Hunde sind willkommen</div>
+                            <div class="col-md-3">Leinenpflicht</div>
+                            <div class="col-md-3">Wasser verfügbar</div>
+                            <div class="col-md-3">Ruhiger Tisch möglich</div>
+                        </div>
+                        <div class="card-text row"><hr></div>
+                        <div class="card-text row">
+                            <div class="col-md-1"></div>
+                            <div id="cardAddress" class="col-md-5">
+                                <div class="row"><a href="geo:50.9297979,11.5802376">Wagnergasse 1-3<br>07743 Jena</a></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row"><a class="" target="_blank" href="https://stilbruch-jena.de/">stilbruch-jena.de</a></div>
+                                <div class="row"><a class="" href="tel:+493641827171">+49 3641 827171</a></div>
+                                <div class="row"><a class="" href="mailto:post@stilbruch-jena.de">post@stilbruch-jena.de</a></div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="card-text row"></div>
+                        <div class="card-footer row visually-hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-success">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h4 class="card-title row" style="margin-left: 0.5rem;">Taparazzi</h4>
+                        <div class="card-text row">
+                            <div class="col-md-3">Hunde sind willkommen</div>
+                            <div class="col-md-3">Keine Leinenpflicht</div>
+                            <div class="col-md-3">Wasser verfügbar</div>
+                            <div class="col-md-3">Ruhiger Tisch möglich</div>
+                        </div>
+                        <div class="card-text row"><hr></div>
+                        <div class="card-text row">
+                            <div class="col-md-1"></div>
+                            <div id="cardAddress" class="col-md-5">
+                                <div class="row"><a href="geo:50.9298034,11.5806213">Johannisplatz 16<br>07743 Jena</a></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row"><a class="" target="_blank" href="https://www.taparazzi.de/Jena.html">taparazzi.de/Jena.html</a></div>
+                                <div class="row"><a class="" href="tel:+4936416341109">+49 3641 6341109</a></div>
+                                <div class="row"><a class="" href="mailto:office@soulfood-holding.de">office@soulfood-holding.de</a></div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="card-text row"></div>
+                        <div class="card-footer row visually-hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-warning">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h4 class="card-title row" style="margin-left: 0.5rem;">Zum Ziegenhainer</h4>
+                        <div class="card-text row">
+                            <div class="col-md-3">Hunde sind willkommen</div>
+                            <div class="col-md-3">Leinenpflicht</div>
+                            <div class="col-md-3">Wasser verfügbar</div>
+                            <div class="col-md-3">Ruhiger Tisch möglich</div>
+                        </div>
+                        <div class="card-text row"><hr></div>
+                        <div class="card-text row">
+                            <div class="col-md-1"></div>
+                            <div id="cardAddress" class="col-md-5">
+                                <div class="row"><a href="geo:50.9199394,11.6220345">Edelhofgasse 3<br>07749 Jena</a></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row"><a class="" target="_blank" href="https://www.zum-ziegenhainer.de/">zum-ziegenhainer.de</a></div>
+                                <div class="row"><a class="" href="tel:+493641360473">+49 3641 360473</a></div>
+                                <div class="row"><a class="" href="mailto:gaststaette@zum-ziegenhainer.de">gaststaette(at)zum-ziegenhainer.de</a></div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="card-text row"></div>
+                        <div class="card-footer row">Hunde bitte vorher anmelden</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bs-callout bs-callout-info border-info">
+            Wenn Ihr Restaurant hier noch aufgelistet werden soll können Sie sich gern an mich wenden. Schreiben Sie mir einfach eine E-Mail mit den Informationen und ich werde schnellstmöglich Ihr Restaurant ergänzen.
+        </div>
+        
+    </div>
 </div>
 
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-middle">
@@ -227,11 +499,24 @@
     </a>
 
     <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="./data/data.csv" class="nav-link px-2 text-muted">CSV Download</a></li>
         <li class="nav-item"><a href="mailto:craven_mascots_0x@icloud.com" class="nav-link px-2 text-muted">Feedback</a></li>
         <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-muted">Über</a></li>
     </ul>
 </footer>
-
 </body>
-</html>
+<script>
+var buttonUp = () => {
+    const input = document.querySelector(".searchbox-input");
+    const cards = document.getElementsByClassName("card");
+    let filter = input.value
+    for (let i = 0; i < cards.length; i++) {
+        let title = cards[i].querySelector(".card-body");
+        if (title.innerText.indexOf(filter) > -1) {
+            cards[i].classList.remove("d-none")
+        } else {
+            cards[i].classList.add("d-none")
+        }
+    }
+}
+</script>
+</html> 
