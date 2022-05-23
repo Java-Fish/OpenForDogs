@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open for Dogs - Jena</title>
+    <meta name="description" content="Auflistung hundefreundlicher Restaurants in und um Jena.">
+    <meta name="og:title" property="og:title" content="Open for Dogs - Jena- Auflistung hundefreundlicher Restaurants in und um Jena.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./libs/bootstrap-5.0.2/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./libs/bootstrap-5.0.2/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./libs/tableExport/tableExport.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body>
+<div id="header" class="container border-bottom">
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+        <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">OpenForDogs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Restaurants</a></li>
+        <li class="nav-item"><a href="./activity.html" class="nav-link">Aktivitäten</a></li>
+        <li class="nav-item"><a href="./empty.html" class="nav-link">Entspannung</a></li>
+        <li class="nav-item"><a href="./about.html" class="nav-link">Über</a></li>
+        </ul>
+    </header>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+        </div>
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Hello card</h4>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Another card</h4>
+                <p class="card-text">Some text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 4 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-middle">
+    <p class="col-md-4 mb-0 text-muted"><a href="./index.html" class="nav-link text-muted">Open for Dogs</a></p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <img src="./media/dogDoodleDrawing.svg" class="img-responsive filter-white" style="width: 40px;" alt="Websitelogo">
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="mailto:craven_mascots_0x@icloud.com" class="nav-link px-2 text-muted">Feedback</a></li>
+        <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-muted">Über</a></li>
+    </ul>
+</footer>
+</body>
+<script>
+var buttonUp = () => {
+    const input = document.querySelector(".searchbox-input");
+    const cards = document.getElementsByClassName("card");
+    let filter = input.value
+    for (let i = 0; i < cards.length; i++) {
+        let title = cards[i].querySelector(".card-body");
+        if (title.innerText.indexOf(filter) > -1) {
+            cards[i].classList.remove("d-none")
+        } else {
+            cards[i].classList.add("d-none")
+        }
+    }
+}
+</script>
+</html> 
