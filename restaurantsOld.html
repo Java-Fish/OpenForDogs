@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open for Dogs - Restaurants</title>
+    <meta name="description" content="Auflistung hundefreundlicher Restaurants in und um Jena.">
+    <meta name="og:title" property="og:title" content="Open for Dogs - Jena- Auflistung hundefreundlicher Restaurants in und um Jena.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./libs/bootstrap-5.0.2/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./libs/bootstrap-5.0.2/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./libs/tableExport/tableExport.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body>
+<div id="header" class="container border-bottom">
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+        <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">OpenForDogs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Restaurants</a></li>
+        <li class="nav-item"><a href="./activity.html" class="nav-link">Aktivitäten</a></li>
+        <li class="nav-item"><a href="./empty.html" class="nav-link">Entspannung</a></li>
+        <li class="nav-item"><a href="./about.html" class="nav-link">Über</a></li>
+        </ul>
+    </header>
+</div>
+
+<div id="content" class="">
+    <div>Die nachstehenden Informationen wurden direkt bei den jeweiligen Restaurants angefragt.</div><br>
+
+    <input class="form-control" id="tableSearch" type="text" placeholder="Suche...">
+    <div>
+        <table id="restaurantTable" class="table table-striped table-bordered table-hover table-sm table-responsive">
+            <caption>Restaurants in Jena und deren Wünsche an Hundebesitzer</caption>            
+            <thead class="">
+                <th data-field="restaurant">Restaurant</th>
+                <th data-field="email">E-Mail</th>
+                <th data-field="welcome-indoor" data-sortable="true">Innen erlaubt</th>
+                <th data-field="welcome-outdoor" data-sortable="true">Außen erlaubt</th>
+                <th data-field="register-required" data-sortable="true">Anmeldung erforderlich</th>
+                <th data-field="leash" data-sortable="true">Leinenpflicht</th>
+                <th data-field="muzzle" data-sortable="true">Maulkorbpflicht</th>
+                <th data-field="water" data-sortable="true">Trinkwasser verfügbar</th>
+                <th data-field="quite-place" data-sortable="true">Ruhiger Platz verfügbar</th>
+            </thead>
+            <tbody id="restaurantTableBody">
+                <tr class="">
+                    <td>Zum Ziegenhainer</td>
+                    <td>gaststaette@zum-ziegenhainer.de</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                </tr>
+                <tr class="">
+                    <td>Beef 52</td>
+                    <td>info@beef-52.de</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Für große Hunde erwünscht</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                </tr>
+                <tr class="">
+                    <td>Milchmix</td>
+                    <td>info@milchmix-eiscafe.de</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td data-toggle="tooltip" title="Keine Angaben">-</td>
+                </tr>
+                <tr class="">
+                    <td>Hotel Schwarzer Bär</td>
+                    <td>hotel@schwarzer-baer.de</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                </tr>
+                <tr class="">
+                    <td>Braugasthof Papiermühle</td>
+                    <td>papiermuehle@jenaer-bier.de</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                </tr>
+                <tr class="">
+                    <td>Taparazzi</td>
+                    <td>office@soulfood-holding.de</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Nein</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                </tr>
+                <tr class="">
+                    <td>Bauersfeld</td>
+                    <td>info@bauersfeld-jena.de</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                </tr>
+                <tr class="">
+                    <td>Fuchsturm</td>
+                    <td>info@fuchsturmgaststaette.de</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                </tr>
+                <tr class="">
+                    <td>Lobdeburgklause</td>
+                    <td>info@lobdeburgklause.de</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                </tr>
+                <tr class="">
+                    <td>Landgraf</td>
+                    <td>info@landgrafen.com</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td data-toggle="tooltip" title="Keine Angaben">-</td>
+                </tr>
+                <tr class="">
+                    <td>McDonalds</td>
+                    <td>service@mcdonalds.de</td>
+                    <td data-toggle="tooltip" title="Angaben befinden sich an der Eingangstür.">Evtl.</td>
+                    <td >Evtl.</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Nein</td>
+                    <td>Nein</td>
+                </tr>
+                <tr class="">
+                    <td>Cafe Immergrün</td>
+                    <td>cafe-immergruen@web.de</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Nein</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                </tr>
+                <tr class="">
+                    <td>Pici Cafe Vinothek</td>
+                    <td>pici-cafe-vinothek@email.de</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Nein</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                </tr>
+                <tr class="">
+                    <td>Nordsee</td>
+                    <td>nordsee@nordsee.com</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td data-toggle="tooltip" title="Keine Angaben">-</td>
+                    <td>Nein</td>
+                    <td>Nein</td>
+                    <td>Nein</td>
+                    <td>Nein</td>
+                </tr>
+                <tr class="">
+                    <td>Stilbruch</td>
+                    <td>post@stilbruch-jena.de</td>
+                    <td>Ja</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                    <td>Nein</td>
+                    <td>Nein</td>
+                    <td>Ja</td>
+                </tr>
+            </tbody>
+        </table>
+    </div><br>
+
+    <div class="reminder">
+    Bitte daran denken, dass es wichtig ist, dass euer Hund auch für die gegebenen Freiheiten bereit ist. Wenn es keine Maulkorbpflicht gibt und ihr euch unsicher seid, dann geht auf Nummer sicher und legt eurem Vierbeiner einen Maulkorb an. Niemand möchte, dass Hundebesitzer in einem schlechten Licht dastehen und wegen Einzelfällen ausgeschlossen werden.
+    </div>
+
+</div>
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-middle">
+    <p class="col-md-4 mb-0 text-muted"><a href="./index.html" class="nav-link text-muted">Open for Dogs</a></p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <img src="./media/dogDoodleDrawing.svg" class="img-responsive filter-white" style="width: 40px;" alt="Websitelogo">
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="./data/data.csv" class="nav-link px-2 text-muted">CSV Download</a></li>
+        <li class="nav-item"><a href="mailto:craven_mascots_0x@icloud.com" class="nav-link px-2 text-muted">Feedback</a></li>
+        <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-muted">Über</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
