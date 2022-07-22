@@ -75,3 +75,16 @@ table{
 .card-text.row{
   margin-bottom: 0.2rem;
 }
+
+.empty-image-link{
+  filter: brightness(30%);
+}
+
+/* Centered text */
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: azure;
+}
